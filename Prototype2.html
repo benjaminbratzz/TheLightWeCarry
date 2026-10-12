@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="The Light We Carry | Experimental" startnode="22" creator="Twine" creator-version="2.12.1" format="SugarCube" format-version="2.37.3" ifid="9dd7a79d-6acb-492e-8701-418e33f7e2ac" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* ==================================================
+	<tw-storydata name="The Light We Carry | Experimental" startnode="1" creator="Twine" creator-version="2.12.1" format="SugarCube" format-version="2.37.3" ifid="9dd7a79d-6acb-492e-8701-418e33f7e2ac" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* ==================================================
    PAGE AND STORY PANEL
    ================================================== */
 
@@ -836,6 +836,34 @@ textarea {
     width: 100px;
     right: 12px;
     bottom: 18px;
+  }
+}
+
+/* Centre the mobile story panel */
+@media screen and (max-width: 600px) {
+  #story {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  #passages {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto !important;
+    padding: 24px 16px 32px;
+  }
+
+  .passage {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 22px 18px;
+  }
+
+  /* Centre the image crop within the phone screen */
+  #story::before {
+    background-position: 50% center;
   }
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* ==================================================
    AUDIO TRACKS
